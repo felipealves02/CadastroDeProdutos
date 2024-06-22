@@ -1,0 +1,97 @@
+:root {
+    --primary-color: #219e9e; 
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #33b3ac;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-bottom: 20px; 
+}
+
+#form-container, #list-container {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, select {
+    margin-top: 5px;
+    font-size: 24px;
+    height: 40px;
+    padding: 0 20px;
+    width: calc(100% - 40px); 
+}
+
+#ovalor-prduto {
+    width: 30%; 
+}
+
+select {
+    width: auto; 
+    padding: 0 10px; 
+    height: 40px;
+}
+
+form button, #novo-produto-botao {
+    border: none;
+    background: var(--primary-color);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+    padding: 0 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form button:hover, #novo-produto-botao:hover {
+    background: #71cee6;
+}
+
+#novo-produto-container {
+    margin-bottom: 20px; 
+    text-align: right; 
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+#value {
+    width: 30%;
+}

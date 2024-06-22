@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="container" id="form-section">
+        <h1>Cadastro de Produtos</h1>
+        <div id="form-container">
+            <form id="product-form">
+                <label for="nome-produto">Nome do produto:</label>
+                <input type="text" id="nome-produto" name="nome-produto" required><br>
+
+                <label for="descricao-produto">Descrição do produto:</label>
+                <input type="text" id="descricao-produto" name="descricao-produto" required><br>
+
+                <label for="valor-produto">Valor do produto:</label>
+                <input type="text" id="valor-produto" name="valor-produto" required><br>
+
+                <label for="disponivel-produto">Disponível para venda:</label>
+                <select id="disponivel-produto" name="disponivel-produto" required>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select><br>
+
+                <button type="submit">Cadastrar Produto</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="container" id="list-section" style="display: none;">
+        <div id="list-container">
+            <h2>Lista de Produtos</h2>
+            <div id="novo-produto-container">
+                <a id="novo-produto-botao" href="#form-section">Cadastrar Novo Produto</a>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Produtos</th>
+                        <th id="value">Valor</th>
+                    </tr>
+                </thead>
+                <tbody id="lista-produtos">
+                </tbody>
+            </table>
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
